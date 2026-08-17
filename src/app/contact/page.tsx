@@ -15,11 +15,11 @@ export default function ContactPage() {
     setError(null);
 
     const formData = new FormData(e.currentTarget);
-    
+
     // Add Web3Forms access key
     // NOTE: Replace this placeholder with your real access key from https://web3forms.com/
-    formData.append("access_key", "WEB3FORMS_ACCESS_KEY_HERE");
-    
+    formData.append("access_key", "d582d9cb-6cd5-48f8-aaea-4d7db36f1c8f");
+
     // Optional: Make it redirect back to form on error, though we handle UI in JS
     formData.append("subject", "New Inquiry from Vaelo Contact Form");
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <p className="text-slate text-lg">
                 Thanks for reaching out. We will get back to you within 24 hours.
               </p>
-              <button 
+              <button
                 onClick={() => setSuccess(false)}
                 className="mt-8 text-sm font-mono text-corporate-blue hover:underline"
               >
