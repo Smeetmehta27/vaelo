@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx opennextjs-cloudflare build --skipNextBuild",
+    "build": "next build && npx opennextjs-cloudflare build --skipNextBuild && node -e \"require('fs').copyFileSync('.open-next/worker.js', '.open-next/assets/_worker.js')\"",
     "start": "next start",
     "lint": "next lint"
   },
