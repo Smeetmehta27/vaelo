@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800;900&amp;display=swap');
+      .v-text {
+        font-family: 'Crimson Pro', serif;
+        font-weight: 700;
+        font-size: 65px;
+      }
+    </style>
+  </defs>
+  <rect width="100" height="100" fill="#0B1727" />
+  <text x="50" y="54" class="v-text" text-anchor="middle" dominant-baseline="middle" fill="#FAFAFA">V</text>
+  <path d="M 24 32 Q 12 50 24 68" fill="none" stroke="#FAFAFA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 76 32 Q 88 50 76 68" fill="none" stroke="#FAFAFA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
