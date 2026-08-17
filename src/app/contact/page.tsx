@@ -15,24 +15,24 @@ export default function ContactPage() {
     setError(null);
 
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      firm: formData.get("firm"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      inquiryType: formData.get("inquiryType"),
-      message: formData.get("message"),
-    };
+    
+    // Add Web3Forms access key
+    // NOTE: Replace this placeholder with your real access key from https://web3forms.com/
+    formData.append("access_key", "WEB3FORMS_ACCESS_KEY_HERE");
+    
+    // Optional: Make it redirect back to form on error, though we handle UI in JS
+    formData.append("subject", "New Inquiry from Vaelo Contact Form");
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to send message. Please try again or email us directly.");
+      const data = await response.json();
+
+      if (!data.success) {
+        throw new Error(data.message || "Failed to send message. Please try again or email us directly.");
       }
 
       setSuccess(true);
