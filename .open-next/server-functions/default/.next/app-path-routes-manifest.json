@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/api/contact/route": "/api/contact",
+  "/apple-icon/route": "/apple-icon",
+  "/contact/page": "/contact",
+  "/how-it-works/page": "/how-it-works",
+  "/icon.svg/route": "/icon.svg",
+  "/manifest.webmanifest/route": "/manifest.webmanifest",
+  "/opengraph-image/route": "/opengraph-image",
+  "/page": "/",
+  "/pricing/page": "/pricing",
+  "/privacy-policy/page": "/privacy-policy",
+  "/terms/page": "/terms"
+}

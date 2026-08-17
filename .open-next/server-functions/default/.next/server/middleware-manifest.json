@@ -1,0 +1,101 @@
+{
+  "version": 3,
+  "middleware": {},
+  "sortedMiddleware": [],
+  "functions": {
+    "/apple-icon/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/apple-icon/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_apple-icon_route_actions_0b5unso.js",
+        "server/edge/chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_07t8eow.js",
+        "server/edge/chunks/_20cjttv._.js",
+        "server/edge/chunks/[root-of-the-server]__0167nzz._.js",
+        "server/edge/chunks/[root-of-the-server]__0m8u4_d._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02snzz8.js"
+      ],
+      "name": "app/apple-icon/route",
+      "page": "/apple-icon/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02snzz8.js",
+      "matchers": [
+        {
+          "regexp": "^/apple-icon(?:/)?$",
+          "originalSource": "/apple-icon"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_10a187050363648b49a36c79d5266d2c",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_yoga_0athij3.wasm"
+        },
+        {
+          "name": "wasm_151b7f7b511bd6dda63695d2c75c87a3",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_resvg_0athij3.wasm"
+        }
+      ],
+      "assets": [
+        {
+          "name": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf",
+          "filePath": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf"
+        }
+      ],
+      "env": {
+        "__NEXT_BUILD_ID": "p2-sVu4uidoRNbsrFhB8M",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "UyLnfTy43NVOK5O2HdpY6zzKQP4G/Bo1zcLlwAIIhKI=",
+        "__NEXT_PREVIEW_MODE_ID": "c8ec9ee72104f32bc8af42e1a560614f",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "6cbbc48e9130a42031c5012fefba639124136dee7788d16fe75449361d665e3a",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "27a3e315f421941b273873fb2311fb77ce365fb7ad1c4392555ef3dfd326aa37"
+      }
+    },
+    "/opengraph-image/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/opengraph-image/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_opengraph-image_route_actions_0as17aw.js",
+        "server/edge/chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_1m0xikl.js",
+        "server/edge/chunks/_0uguk8w._.js",
+        "server/edge/chunks/[root-of-the-server]__0167nzz._.js",
+        "server/edge/chunks/[root-of-the-server]__0m8u4_d._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1uwv5l0.js"
+      ],
+      "name": "app/opengraph-image/route",
+      "page": "/opengraph-image/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_1uwv5l0.js",
+      "matchers": [
+        {
+          "regexp": "^/opengraph-image(?:/)?$",
+          "originalSource": "/opengraph-image"
+        }
+      ],
+      "wasm": [
+        {
+          "name": "wasm_10a187050363648b49a36c79d5266d2c",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_yoga_0athij3.wasm"
+        },
+        {
+          "name": "wasm_151b7f7b511bd6dda63695d2c75c87a3",
+          "filePath": "server/edge/chunks/node_modules_next_dist_compiled_@vercel_og_resvg_0athij3.wasm"
+        }
+      ],
+      "assets": [
+        {
+          "name": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf",
+          "filePath": "server/edge/assets/Geist-Regular.05-7db9wczy07.ttf"
+        }
+      ],
+      "env": {
+        "__NEXT_BUILD_ID": "p2-sVu4uidoRNbsrFhB8M",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "UyLnfTy43NVOK5O2HdpY6zzKQP4G/Bo1zcLlwAIIhKI=",
+        "__NEXT_PREVIEW_MODE_ID": "c8ec9ee72104f32bc8af42e1a560614f",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "6cbbc48e9130a42031c5012fefba639124136dee7788d16fe75449361d665e3a",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "27a3e315f421941b273873fb2311fb77ce365fb7ad1c4392555ef3dfd326aa37"
+      }
+    }
+  }
+}
