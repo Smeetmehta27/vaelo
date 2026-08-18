@@ -39,3 +39,10 @@ The assets are located in the codebase:
 ## 4. Layout Concept
 **Concept: The Structured Ledger.** 
 The layout eschews floating, drop-shadowed cards in favor of a crisp, grid-based structure using 1px `Ledger Line` borders. Sections feel like beautifully typeset financial reports, relying on alignment and negative space rather than decorative gradients.
+
+## 5. Technical Architecture & Deployment
+Vaelo is engineered as a **100% static Next.js export** (`output: 'export'`), resulting in a pure HTML/CSS/JS build with zero server-side dependencies.
+
+- **Hosting:** Deployed to Cloudflare Pages via standard static asset upload (`out/` directory). No Cloudflare Workers, Edge runtime, or SSR adapters (like `@opennextjs/cloudflare`) are used.
+- **Contact Form:** Submits directly from the client browser to Web3Forms' API (`https://api.web3forms.com/submit`). There is no backend `/api/contact` route or server-side Resend integration. The Web3Forms access key is a public UUID stored directly in the client code.
+- **Data Fetching:** All data and pages are prerendered at build time.

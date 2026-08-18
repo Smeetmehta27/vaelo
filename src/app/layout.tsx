@@ -21,6 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vaelo.co.in"),
   title: "Vaelo | Institutional-grade financial analysis",
   description: "Wall Street rigor, delivered through your CA practice.",
   openGraph: {

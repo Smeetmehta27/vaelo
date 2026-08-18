@@ -24,15 +24,26 @@ export default function ContactPage() {
     formData.append("subject", "New Inquiry from Vaelo Contact Form");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+      let response;
+      try {
+        response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
+      } catch (networkErr) {
+        throw new Error("Network error: Could not reach the submission server.");
+      }
 
-      const data = await response.json();
+      let data;
+      try {
+        data = await response.json();
+      } catch (parseErr) {
+        throw new Error(`Server returned an invalid response (Status: ${response.status}).`);
+      }
 
-      if (!data.success) {
-        throw new Error(data.message || "Failed to send message. Please try again or email us directly.");
+      // Check both the HTTP status AND the success boolean in the payload
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || `Submission failed with status ${response.status}. Please try again or email us directly.`);
       }
 
       setSuccess(true);
