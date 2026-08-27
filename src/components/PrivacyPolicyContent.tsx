@@ -27,7 +27,7 @@ export function PrivacyPolicyContent() {
             <ul className="list-disc pl-5 space-y-2 mt-4">
               <li><strong>Account Information:</strong> Your name, firm name, email address, and billing details.</li>
               <li><strong>WhatsApp Contact Information:</strong> The verified phone number you provide to receive your generated reports via the WhatsApp Business API.</li>
-              <li><strong>Client Financial Data:</strong> The raw financial data you submit for analysis. This includes Tally or Zoho exports, manual Profit & Loss statements, Balance Sheets, and specific transaction assumptions needed to generate Valuation or Deal Feasibility reports.</li>
+              <li><strong>Client Financial Data:</strong> The raw financial data you submit for analysis. This includes Tally or Zoho exports, manual Profit & Loss statements, Balance Sheets, and specific transaction assumptions needed to generate CMA, Financial Health, or Feasibility reports.</li>
             </ul>
           </div>
 
@@ -35,8 +35,8 @@ export function PrivacyPolicyContent() {
             <h2 className="text-2xl mt-10 mb-4">2. How We Use Your Data</h2>
             <p>Your data is used strictly to deliver the service you requested. We use the information to:</p>
             <ul className="list-disc pl-5 space-y-2 mt-4">
-              <li>Ingest and structure financial data to generate deterministic financial models (e.g., DCF valuations).</li>
-              <li>Deliver the final, white-labeled PDF reports to you via WhatsApp or email.</li>
+              <li>Ingest and structure financial data to generate deterministic financial models.</li>
+              <li>Make the live financial models and optional white-labeled PDF exports available securely within your workspace dashboard.</li>
               <li>Provide customer support and respond to your inquiries.</li>
             </ul>
             <p className="mt-4 font-medium text-ink bg-paper p-4 border border-ledger-line rounded-sm">
@@ -71,7 +71,7 @@ export function PrivacyPolicyContent() {
           <div>
             <h2 className="text-2xl mt-10 mb-4">5. Data Retention & Deletion</h2>
             <p>
-              We retain your account information and generated reports for as long as your account is active, allowing you to access historical valuations. 
+              We retain your account information and generated reports for as long as your account is active, allowing you to access historical models. 
             </p>
             <p className="mt-2">
               If you delete a client profile or close your Vaelo account, the associated raw financial data and generated reports are permanently deleted from our active databases within 30 days. You may request immediate deletion of specific client data at any time after a report is finalized.

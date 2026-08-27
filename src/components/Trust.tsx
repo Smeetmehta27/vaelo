@@ -9,7 +9,7 @@ export function Trust() {
     },
     {
       title: "Auditable & Formula-Driven",
-      description: "You stake your professional reputation on the advice you give. That's why every number we produce is fully traceable to standard financial formulas. No black-box AI guesswork.",
+      description: "You stake your reputation on your advice. By separating our canonical financial engines from the presentation layer, every metric, ratio, and scenario is fully traceable back to its underlying formula. No black-box AI guesswork.",
     },
     {
       title: "DPDP Act-Conscious Privacy",
@@ -18,8 +18,8 @@ export function Trust() {
       linkText: "Read our Privacy Policy",
     },
     {
-      title: "No New Dashboards",
-      description: "You don't have time to learn another SaaS tool. Reports are delivered directly to you via WhatsApp or secure email. Review it, forward it to your client, and look like a hero.",
+      title: "One Workspace, Not More Tools",
+      description: "You already juggle Tally, Excel, emails, and WhatsApp. Vaelo consolidates client financial work into a single live workspace, giving both you and your client a unified view instead of bouncing reports across disconnected channels.",
     },
   ];
 

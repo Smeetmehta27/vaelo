@@ -36,10 +36,10 @@ export function Nav() {
           
           <div className="hidden md:block">
             <Link 
-              href="/contact" 
+              href="/signup" 
               className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90 hover:-translate-y-[1px] hover:shadow-sm transition-all duration-200"
             >
-              Get Started
+              Start Free
             </Link>
           </div>
 
@@ -103,11 +103,11 @@ export function Nav() {
               </Link>
               <div className="pt-4">
                 <Link
-                  href="/contact"
+                  href="/signup"
                   onClick={() => setIsOpen(false)}
                   className="w-full inline-flex justify-center items-center px-4 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90"
                 >
-                  Get Started
+                  Start Free
                 </Link>
               </div>
             </div>

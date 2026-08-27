@@ -9,16 +9,16 @@ export function CtaSection() {
           Ready to elevate your advisory practice?
         </h2>
         <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-          Request a sample report today to see the rigor of our analysis firsthand. First-time practices can commission their first client report at a discounted pilot rate.
+          Sign up today to see the rigor of our analysis firsthand. First-time practices can secure our founding-member subscription rate.
         </p>
         <Link
-          href="/contact"
+          href="/signup"
           className="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-corporate-blue bg-white hover:bg-slate-50 hover:-translate-y-[1px] hover:shadow-md transition-all duration-200"
         >
-          Request a sample report
+          Start Free
         </Link>
         <p className="mt-6 text-sm font-mono text-blue-200">
-          No subscription required. Pay per report.
+          ₹2,000 one-time setup · ₹300–500/month · Full platform access.
         </p>
       </Reveal>
     </section>

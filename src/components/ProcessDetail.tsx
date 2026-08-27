@@ -4,23 +4,23 @@ export function ProcessDetail() {
   const steps = [
     {
       number: "01",
-      title: "Data Submission & Ingestion",
-      content: "A rigorous valuation starts with clean data. We accept direct exports from Tally and Zoho Books, or you can submit standard manual P&L and Balance Sheet data via our structured Excel templates. You provide the historical financials; we handle the structuring.",
+      title: "Data Connection & Ingestion",
+      content: "Rigorous financial analysis starts with clean data. Connect direct exports from Tally and Zoho Books, or import standard P&L and Balance Sheet data via our structured Excel templates directly into your workspace. You provide the historical financials; the platform handles the structuring instantly.",
     },
     {
       number: "02",
       title: "Deterministic Financial Modeling",
-      content: "Vaelo does not use generative AI to guess numbers. Every model—whether a Discounted Cash Flow (DCF) valuation, a sensitivity grid, or accretion/dilution logic for deal feasibility—is strictly formula-driven, deterministic, and entirely auditable. We apply Wall Street-standard methodologies that hold up under scrutiny.",
+      content: "Vaelo does not use generative AI to guess numbers. Every module—whether a CMA projection, a financial health diagnostic, or accretion/dilution logic for feasibility—is strictly formula-driven, deterministic, and entirely auditable. We apply Wall Street-standard methodologies that hold up under scrutiny.",
     },
     {
       number: "03",
-      title: "Rapid Turnaround & Delivery",
-      content: "Time kills deals. You can expect the first draft of the client-ready report within 24 to 48 hours. The final output is delivered securely via WhatsApp or email directly to you, so you never have to log into yet another dashboard to retrieve your work.",
+      title: "Instant Results in Your Workspace",
+      content: "Time kills deals. There is no waiting for a manual turnaround. The moment a pipeline runs, the results appear live in your dashboard. You have immediate access to the output, and you control whether your client can log in to see the work you've done for them.",
     },
     {
       number: "04",
-      title: "Presentation & Iterative Refinement",
-      content: "The report is white-labeled with your practice's branding—it is your advice, powered by our modeling. If you or your client want to see how a 2% change in terminal growth or a different WACC affects the final value, simply request an adjustment. We regenerate the updated model immediately.",
+      title: "Presentation & Live Iteration",
+      content: "The workspace is white-labeled with your practice's branding—it is your advice, powered by our modeling. If you or your client want to see how a change in revenue growth assumptions or working capital ratios affects the output, simply adjust the assumption in the dashboard. The entire model updates instantly.",
     },
   ];
 

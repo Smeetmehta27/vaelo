@@ -4,23 +4,23 @@ export function HowItWorks() {
   const steps = [
     {
       id: "01",
-      title: "Data Submission",
-      description: "Submit your client's raw financials via a secure portal or email for a specific event—such as a loan application, potential sale, merger, or investor conversation.",
+      title: "Onboard your practice",
+      description: "Sign up and set up your firm's secure workspace. Establish your branding and operational defaults in minutes.",
     },
     {
       id: "02",
-      title: "Deterministic Modeling",
-      description: "Vaelo runs rigorous valuation and feasibility modeling (including DCF, sensitivity analysis, and accretion/dilution). Every output is strictly formula-driven and auditable, never a black box.",
+      title: "Add your clients",
+      description: "Invite clients into your workspace. They get their own secure login to see every report and analysis you run for them — a shared ecosystem, not a one-way delivery.",
     },
     {
       id: "03",
-      title: "Report Delivery",
-      description: "Within 24 to 48 hours, you receive a beautifully formatted, client-ready PDF report branded with your firm's details, delivered directly via WhatsApp or secure email.",
+      title: "Run pipelines instantly",
+      description: "Run CMA, Financial Health, or Feasibility pipelines on demand. Results appear in your dashboard instantly, built on deterministic, auditable modeling with no black-box AI.",
     },
     {
       id: "04",
-      title: "Iterative Refinement",
-      description: "Review the model with your client. If variables change, simply request adjusted assumptions and we will generate an updated report for you immediately.",
+      title: "Share and advise",
+      description: "Review the formula-driven output live with your client. Export branded reports when needed, and track changes seamlessly as new financial data arrives.",
     },
   ];
 

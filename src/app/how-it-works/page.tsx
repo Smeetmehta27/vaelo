@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How It Works | Vaelo",
-  description: "Learn how our 4-step process delivers rigorous financial models in 24-48 hours.",
+  description: "Learn how our 4-step process delivers rigorous, instant financial models on demand in a live collaborative workspace.",
 };
 
 export default function HowItWorksPage() {

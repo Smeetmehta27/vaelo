@@ -5,16 +5,16 @@ export function PricingFaq() {
     <section className="bg-white py-24 border-b border-ledger-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="border border-ledger-line p-10 lg:p-16 text-center">
-          <h2 className="text-3xl font-serif text-ink mb-6">Why per-report, not a monthly platform fee?</h2>
+          <h2 className="text-3xl font-serif text-ink mb-6">Why this pricing model?</h2>
           <div className="text-slate text-lg leading-relaxed max-w-2xl mx-auto space-y-6">
             <p>
-              Most enterprise finance software forces you into an expensive annual seat license, regardless of how often you use the tool. But your practice's advisory needs aren't always linear. 
+              Vaelo isn't just a report generator; it's a live, always-on financial workspace connecting you and your clients. A low one-time setup fee gets you on the platform immediately, and the monthly subscription keeps it running.
             </p>
             <p>
-              Vaelo is built for the moments that matter—a crucial loan application, a potential sale, or a strategic merger—not for day-to-day bookkeeping monitoring. 
+              Your monthly cost scales gently with usage — the more reports you run, the closer you are to the upper end of the ₹300–500 range. A quieter month costs less.
             </p>
             <p className="text-ink font-medium">
-              We believe you should only pay for institutional-grade rigor when you actually need it. Our pricing matches how independent practices actually operate.
+              This means you never pay for capacity you don't use, and you never hit a ceiling when your practice is busy.
             </p>
           </div>
         </Reveal>

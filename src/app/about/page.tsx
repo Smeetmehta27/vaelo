@@ -27,7 +27,7 @@ export default function AboutPage() {
             </RevealItem>
             <RevealItem>
               <p>
-                Independent Chartered Accountants are increasingly asked for strategic advice—valuations, M&A feasibility, and health modeling. However, the tooling required to deliver this rigor is often locked behind expensive enterprise licenses, and building deterministic models from scratch takes time that working practices simply don't have.
+                Independent Chartered Accountants are increasingly asked for strategic advice—CMA prep, health modeling, and feasibility. However, the tooling required to deliver this rigor is often locked behind expensive enterprise licenses, and building deterministic models from scratch takes time that working practices simply don't have.
               </p>
             </RevealItem>
             
@@ -45,8 +45,11 @@ export default function AboutPage() {
 
             <RevealItem>
               <h2 className="text-2xl font-serif text-ink mt-12 mb-6">What makes us different</h2>
+              <p className="mb-4">
+                Vaelo bridges the gap in the market by being built specifically for solo and small CA practices, not massive enterprise finance teams. The final output is delivered through your practice's own client relationship, empowering your advisory role rather than replacing it.
+              </p>
               <p>
-                Vaelo bridges the gap in the market by being built specifically for solo and small CA practices, not massive enterprise finance teams. We do not use "black-box" AI tools to guess numbers. Every model is entirely deterministic, strictly formula-driven, and fully auditable. The final output is delivered through your practice's own client relationship, empowering your advisory role rather than replacing it.
+                Our core differentiator is architectural: Vaelo strictly separates its canonical financial engines from the presentation layer. Every metric, ratio, projection, covenant, funding requirement, and scenario is completely traceable back to its underlying inputs and formulas. We do not use "black-box" AI tools to guess numbers. Every module is entirely deterministic, strictly formula-driven, and fully auditable.
               </p>
             </RevealItem>
             <RevealItem>

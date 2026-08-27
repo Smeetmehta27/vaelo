@@ -11,17 +11,17 @@ export function Hero() {
           {/* Copy */}
           <Reveal className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-ink leading-[1.1] tracking-tight">
-              Institutional-grade financial analysis for your SME clients.
+              The collaborative financial workspace for CAs and their clients.
             </h1>
             <p className="mt-6 text-lg text-slate leading-relaxed">
-              Equip your CA practice with deterministic valuation, deal feasibility, and financial health modeling. Submit client financials and receive a rigorous, client-ready report delivered via WhatsApp or PDF in 24-48 hours.
+              Equip your CA practice with structured financial intelligence across CMA, financial health, and feasibility. Run pipelines on demand from a self-serve dashboard, while your clients log in to see the actual reports and analysis you've run for them.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact"
+                href="/signup"
                 className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90 hover:-translate-y-[1px] hover:shadow-md transition-all duration-200"
               >
-                Request a Sample Report
+                Start Free
               </Link>
               <Link
                 href="/how-it-works"

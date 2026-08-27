@@ -17,7 +17,7 @@ export function Footer() {
               <span className="font-serif text-2xl font-semibold tracking-tight text-paper transition-opacity duration-200 group-hover:opacity-90">Vaelo</span>
             </Link>
             <p className="mt-4 text-sm text-slate-300 max-w-xs leading-relaxed">
-              Institutional-grade financial analysis, purpose-built for independent Chartered Accountants in India.
+              Institutional-grade financial analysis in a live workspace, connecting independent Chartered Accountants to their clients.
             </p>
           </RevealItem>
           

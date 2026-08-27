@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CtaSection } from "@/components/CtaSection";
 import { Reveal } from "@/components/animations/Reveal";
 
-export default function ContactPage() {
+export default function SignupPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -16,12 +16,9 @@ export default function ContactPage() {
 
     const formData = new FormData(e.currentTarget);
 
-    // Add Web3Forms access key
-    // NOTE: Replace this placeholder with your real access key from https://web3forms.com/
+    // Web3Forms access key
     formData.append("access_key", "d582d9cb-6cd5-48f8-aaea-4d7db36f1c8f");
-
-    // Optional: Make it redirect back to form on error, though we handle UI in JS
-    formData.append("subject", "New Inquiry from Vaelo Contact Form");
+    formData.append("subject", "New Early Access Signup for Vaelo");
 
     try {
       let response;
@@ -41,7 +38,6 @@ export default function ContactPage() {
         throw new Error(`Server returned an invalid response (Status: ${response.status}).`);
       }
 
-      // Check both the HTTP status AND the success boolean in the payload
       if (!response.ok || !data.success) {
         throw new Error(data.message || `Submission failed with status ${response.status}. Please try again or email us directly.`);
       }
@@ -60,9 +56,9 @@ export default function ContactPage() {
       <section className="bg-paper py-24 border-b border-ledger-line">
         <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 border-b border-ledger-line pb-8">
-            <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Contact Vaelo</h1>
+            <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Start your free workspace</h1>
             <p className="text-xl text-slate leading-relaxed">
-              Ask about our methodology, inquire about early access, or tell us about your practice.
+              Join Vaelo pre-launch to secure early access to the platform and lock in our foundational pricing.
             </p>
           </div>
 
@@ -73,16 +69,10 @@ export default function ContactPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif text-ink mb-2">Message received</h3>
+              <h3 className="text-2xl font-serif text-ink mb-2">You're on the list</h3>
               <p className="text-slate text-lg">
-                Thanks for reaching out. We will get back to you within 24 hours.
+                Thanks for your interest. We will be in touch shortly with early access details.
               </p>
-              <button
-                onClick={() => setSuccess(false)}
-                className="mt-8 text-sm font-mono text-corporate-blue hover:underline"
-              >
-                Send another message
-              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -127,50 +117,15 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-ink mb-1 font-mono uppercase tracking-wider">Phone Number</label>
+                  <label htmlFor="clients" className="block text-sm font-medium text-ink mb-1 font-mono uppercase tracking-wider">Number of Active Clients</label>
                   <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    type="text"
+                    name="clients"
+                    id="clients"
+                    placeholder="Optional"
+                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors placeholder:text-slate/50"
                   />
                 </div>
-              </div>
-
-              <div>
-                <label htmlFor="interest" className="block text-sm font-medium text-ink mb-1 font-mono uppercase tracking-wider">What are you looking for? *</label>
-                <div className="relative">
-                  <select
-                    name="interest"
-                    id="interest"
-                    required
-                    defaultValue=""
-                    className="appearance-none w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
-                  >
-                    <option value="" disabled>Select an option...</option>
-                    <option value="Early access">Join early access</option>
-                    <option value="Methodology">Ask about our methodology</option>
-                    <option value="General inquiry">General inquiry</option>
-                    <option value="Something else">Something else</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate">
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-ink mb-1 font-mono uppercase tracking-wider">Message *</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows={5}
-                  required
-                  className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors resize-y"
-                  placeholder="Tell us a bit about your practice or specific requirements..."
-                ></textarea>
               </div>
 
               <div className="pt-4">
@@ -179,14 +134,13 @@ export default function ContactPage() {
                   disabled={isSubmitting}
                   className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
                 >
-                  {isSubmitting ? "Sending..." : "Submit Inquiry"}
+                  {isSubmitting ? "Submitting..." : "Join Early Access"}
                 </button>
               </div>
             </form>
           )}
         </Reveal>
       </section>
-      <CtaSection />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pricing | Vaelo",
-  description: "Transparent, per-engagement pricing for DCF models, deal feasibility, and health snapshots.",
+  description: "Simple, transparent pricing for CMA, financial health, and feasibility pipelines. One setup fee, one monthly subscription.",
 };
 
 export default function PricingPage() {

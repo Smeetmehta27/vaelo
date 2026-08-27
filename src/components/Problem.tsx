@@ -6,17 +6,17 @@ export function Problem() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Reveal>
           <h2 className="text-3xl font-serif text-ink mb-6">
-            Strategic advice is expected. Producing it shouldn't drain your practice.
+            You are their single point of contact, but disconnected systems hold you back.
           </h2>
           <div className="font-sans text-slate text-lg leading-relaxed space-y-6">
             <p>
-              Your clients are increasingly looking to you for strategic guidance during the moments that matter most—a critical loan application, an approaching acquisition, or negotiating with an investor.
+              Clients rely on you for their financial truth, yet there is no shared, live system connecting your practice to their business. Everything happens through fragmented spreadsheets, email threads, and WhatsApp messages.
             </p>
             <p>
-              But producing investment-grade valuation or deal feasibility models manually demands hours of modeling that most small and solo practices simply don't have. Enterprise software is built and priced for large corporate finance teams, not independent Chartered Accountants.
+              Between meetings, clients have no visibility into their own numbers, while you spend countless hours manually reconciling data rather than providing strategic advice. The disconnect drains your time and limits their insight.
             </p>
             <p className="text-ink font-medium">
-              Vaelo bridges this gap. We provide the heavy quantitative lifting, so you can focus on advising your client with confidence.
+              Vaelo bridges this gap. A unified financial workspace that brings your analysis and your clients into one live platform.
             </p>
           </div>
         </Reveal>

@@ -6,16 +6,20 @@ export function Faq() {
     },
     {
       question: "What if I don't use Tally or Zoho?",
-      answer: "Not a problem. While direct exports from Tally and Zoho are faster, you can submit standard manual P&L and Balance Sheet data using our structured Excel templates. We accommodate the reality of how your clients maintain their books.",
+      answer: "Not a problem. While direct imports from Tally and Zoho are faster, you can seamlessly upload standard P&L and Balance Sheet data using our structured Excel templates directly into the workspace. We accommodate the reality of how your clients maintain their books.",
     },
     {
       question: "Can I adjust the assumptions?",
-      answer: "Yes. Your professional judgment is paramount. If you disagree with a baseline growth rate, discount rate, or sector multiple based on your knowledge of the client, simply provide the adjusted assumption. We will regenerate the entire model to reflect your exact inputs.",
+      answer: "Yes. Your professional judgment is paramount. If you disagree with a baseline growth rate, projection period, or working capital assumption based on your knowledge of the client, simply adjust it directly in the dashboard. The entire model recalculates instantly to reflect your inputs.",
     },
     {
-      question: "How is this different from an online valuation calculator?",
-      answer: "Online calculators are generic, self-serve tools that lack depth and rigor. Vaelo provides institutional-grade modeling built specifically around the CA's workflow. We produce comprehensive, branded reports (including complex sensitivity analyses) designed to be presented as professional advisory work, not a quick web estimate.",
+      question: "How is this different from an online financial calculator?",
+      answer: "Online calculators are generic, self-serve tools that lack depth and rigor. Vaelo provides institutional-grade modeling built specifically around the CA's workflow. We provide a comprehensive, continuous workspace designed for professional advisory, complete with complex sensitivity analyses and custom branding.",
     },
+    {
+      question: "Can my clients see this too?",
+      answer: "Yes, if you choose. You can give clients their own login to see the actual reports and analysis you've generated for them. You remain in complete control over what they see — it's a shared ecosystem, not a one-way delivery.",
+    }
   ];
 
   return (
