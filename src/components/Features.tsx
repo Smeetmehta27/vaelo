@@ -23,24 +23,24 @@ export function Features() {
   ];
 
   return (
-    <section className="bg-white py-24 border-b border-ledger-line">
+    <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="mb-16 max-w-3xl">
           <h2 className="text-3xl font-serif text-ink">Structured financial intelligence, module by module</h2>
-          <p className="mt-4 text-slate text-lg">Three core pipelines that turn raw client financial data into reliable, explainable, decision-ready output—available on demand inside your workspace.</p>
+          <p className="mt-4 text-ink-soft text-lg">Three core pipelines that turn raw client financial data into reliable, explainable, decision-ready output—available on demand inside your workspace.</p>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {pipelines.map((pipeline) => (
-            <RevealItem key={pipeline.name} className="border border-ledger-line p-8 flex flex-col h-full hover:border-corporate-blue/50 hover:-translate-y-1 hover:shadow-md transition-all duration-200 bg-white">
+            <RevealItem key={pipeline.name} className="border border-stone-line p-8 flex flex-col h-full hover:border-bronze/50 hover:-translate-y-1 hover:shadow-md transition-all duration-200 bg-paper">
               <h3 className="text-xl font-serif font-medium text-ink mb-4">{pipeline.name}</h3>
-              <p className="text-slate text-sm leading-relaxed flex-grow mb-6">
+              <p className="text-ink-soft text-sm leading-relaxed flex-grow mb-6">
                 {pipeline.description}
               </p>
-              <div className="pt-6 border-t border-ledger-line/50 mt-auto">
-                <span className="block text-xs font-mono uppercase tracking-wide text-slate mb-1">When to run:</span>
+              <div className="pt-6 border-t border-stone-line/50 mt-auto">
+                <span className="block text-xs font-mono uppercase tracking-wide text-ink-soft mb-1">When to run:</span>
                 <span className="block text-sm font-medium text-ink mb-3">{pipeline.for}</span>
-                <span className="block text-xs font-mono text-precision-green">✦ {pipeline.speed}</span>
+                <span className="block text-xs font-mono text-bronze">✦ {pipeline.speed}</span>
               </div>
             </RevealItem>
           ))}

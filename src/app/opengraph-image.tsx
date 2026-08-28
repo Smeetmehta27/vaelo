@@ -9,29 +9,28 @@ export default async function Image() {
   return new ImageResponse(
     (
       <div style={{
-        background: '#0B1727', // Ink background for premium feel
+        background: '#14171C', // Ink background
         width: '100%',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        color: '#FAFAFA',
+        color: '#F7F4EF', // Paper text
       }}>
-        {/* Lockup */}
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: 'flex', position: 'relative', alignItems: 'center', justifyContent: 'center', width: 100, height: 100 }}>
-            <svg width="100" height="100" viewBox="0 0 100 100" style={{ position: 'absolute' }}>
-              <path d="M 24 32 Q 12 50 24 68" fill="none" stroke="#FAFAFA" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M 76 32 Q 88 50 76 68" fill="none" stroke="#FAFAFA" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <div style={{ fontSize: 65, fontWeight: 500, fontFamily: 'serif' }}>V</div>
-          </div>
-          <div style={{ fontSize: 60, fontWeight: 500, fontFamily: 'serif', marginLeft: 10 }}>Vaelo</div>
+        {/* Horizontal lockup: V symbol + wordmark */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+          {/* Constructed V mark */}
+          <svg width="80" height="80" viewBox="0 0 120 120" fill="none">
+            <polygon points="20,20 43,20 62,98" fill="#F7F4EF"/>
+            <polygon points="87,20 99,20 62,98" fill="#F7F4EF"/>
+          </svg>
+          {/* Serif wordmark */}
+          <div style={{ fontSize: 64, fontWeight: 600, fontFamily: 'serif', letterSpacing: '-0.015em' }}>Vaelo</div>
         </div>
         
         {/* Tagline */}
-        <div style={{ marginTop: 40, fontSize: 32, color: '#E2E8F0', fontFamily: 'sans-serif', letterSpacing: '-0.01em' }}>
+        <div style={{ marginTop: 40, fontSize: 28, color: '#CFC8BA', fontFamily: 'sans-serif', letterSpacing: '-0.01em' }}>
           Institutional-grade financial analysis for independent CA practices
         </div>
       </div>

@@ -1,21 +1,23 @@
 // Design tokens for Vaelo marketing site
-// Derived from DESIGN.md plan
+// Derived from the approved Vaelo Identity System
 
 export const tokens = {
   colors: {
-    ink: '#0B1727', // Deepest Navy: Used for primary text and dark backgrounds.
-    corporateBlue: '#1A365D', // Primary Action/Brand. Professional, trustworthy.
-    precisionGreen: '#047857', // Highlight/Positive Data, CTAs.
-    slate: '#475569', // Secondary text (metadata, table headers).
-    ledgerLine: '#E2E8F0', // Borders for grid-like layouts.
-    paper: '#FAFAFA', // Background crisp off-white.
-    white: '#FFFFFF',
+    ink: '#14171C',        // Primary brand color. Wordmark, logo, headings, primary text, dark surfaces.
+    inkSoft: '#4B4A45',    // Secondary text, metadata, descriptions.
+    paper: '#F7F4EF',      // Primary background. Replaces pure-white.
+    paperDim: '#EFEAE1',   // Secondary surfaces, cards.
+    stone: '#CFC8BA',      // Structural neutral.
+    stoneLine: '#DAD4C6',  // Borders and dividers.
+    bronze: '#96733A',     // Proprietary accent. CTAs, active states, highlights.
+    bronzeDeep: '#6E5225', // Bronze text on light backgrounds, hover states.
+    bronzeTint: '#F1E6D2', // Bronze pills, soft highlights, status backgrounds.
   },
   typography: {
     fonts: {
-      sans: 'var(--font-inter)',
-      serif: 'var(--font-crimson-pro)',
-      mono: 'var(--font-jetbrains-mono)',
+      sans: "var(--font-ibm-plex-sans)",   // Navigation, body, buttons, forms, UI.
+      serif: "var(--font-source-serif-4)", // Wordmark, headings, editorial emphasis.
+      mono: "var(--font-ibm-plex-mono)",   // Financial figures, metrics, technical labels.
     }
   },
   spacing: {

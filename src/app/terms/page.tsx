@@ -11,15 +11,15 @@ export default function TermsPage() {
 
   return (
     <main>
-      <section className="bg-white py-20 border-b border-ledger-line">
+      <section className="bg-paper py-20 border-b border-stone-line">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="mb-12 border-b border-ledger-line pb-8">
+          <div className="mb-12 border-b border-stone-line pb-8">
             <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Terms of Service</h1>
-            <p className="text-slate text-sm font-mono uppercase tracking-wider">Effective Date: {currentDate}</p>
+            <p className="text-ink-soft text-sm font-mono uppercase tracking-wider">Effective Date: {currentDate}</p>
           </div>
 
-          <div className="prose prose-slate prose-headings:font-serif prose-headings:text-ink prose-headings:font-medium prose-p:text-slate prose-a:text-corporate-blue max-w-none space-y-8">
+          <div className="prose prose-slate prose-headings:font-serif prose-headings:text-ink prose-headings:font-medium prose-p:text-ink-soft prose-a:text-bronze-deep max-w-none space-y-8">
 
             <div>
               <p className="text-lg leading-relaxed mb-6">
@@ -58,7 +58,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-2xl mt-10 mb-4">5. Acceptable Use</h2>
               <p>You agree not to:</p>
-              <ul className="list-disc pl-5 space-y-2 mt-4">
+              <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
                 <li>Use the Service for any unlawful purpose or in violation of applicable regulations.</li>
                 <li>Attempt to reverse-engineer, decompile, or disassemble any part of the platform.</li>
                 <li>Share your account credentials with unauthorized third parties.</li>
@@ -102,12 +102,12 @@ export default function TermsPage() {
               </p>
             </div>
 
-            <div className="pt-8 mt-12 border-t border-ledger-line">
+            <div className="pt-8 mt-12 border-t border-stone-line">
               <h2 className="text-2xl mb-4">11. Contact</h2>
               <p>
                 If you have any questions about these Terms, please contact us at:
               </p>
-              <p className="mt-4 font-mono font-medium text-corporate-blue">
+              <p className="mt-4 font-mono font-medium text-bronze-deep">
                 vaelo.team@gmail.com
               </p>
             </div>

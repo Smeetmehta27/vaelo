@@ -9,8 +9,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Institutional-grade financial analysis for independent CA practices',
     start_url: '/',
     display: 'standalone',
-    background_color: '#FAFAFA',
-    theme_color: '#1A365D',
+    background_color: '#F7F4EF',
+    theme_color: '#14171C',
     icons: [
       {
         src: '/icon.svg',

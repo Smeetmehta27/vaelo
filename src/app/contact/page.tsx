@@ -57,29 +57,29 @@ export default function ContactPage() {
 
   return (
     <main>
-      <section className="bg-paper py-24 border-b border-ledger-line">
+      <section className="bg-paper py-24 border-b border-stone-line">
         <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 border-b border-ledger-line pb-8">
+          <div className="mb-12 border-b border-stone-line pb-8">
             <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Contact Vaelo</h1>
-            <p className="text-xl text-slate leading-relaxed">
+            <p className="text-xl text-ink-soft leading-relaxed">
               Ask about our methodology, inquire about early access, or tell us about your practice.
             </p>
           </div>
 
           {success ? (
-            <div className="bg-white border-2 border-precision-green p-8 text-center flex flex-col items-center">
-              <div className="w-16 h-16 bg-precision-green/10 text-precision-green rounded-full flex items-center justify-center mb-4">
+            <div className="bg-paper-dim border-2 border-bronze p-8 text-center flex flex-col items-center">
+              <div className="w-16 h-16 bg-bronze-tint text-bronze-deep rounded-full flex items-center justify-center mb-4">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <h3 className="text-2xl font-serif text-ink mb-2">Message received</h3>
-              <p className="text-slate text-lg">
+              <p className="text-ink-soft text-lg">
                 Thanks for reaching out. We will get back to you within 24 hours.
               </p>
               <button
                 onClick={() => setSuccess(false)}
-                className="mt-8 text-sm font-mono text-corporate-blue hover:underline"
+                className="mt-8 text-sm font-mono text-bronze-deep hover:underline"
               >
                 Send another message
               </button>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     name="name"
                     id="name"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
                 <div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     name="firm"
                     id="firm"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                     name="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
                 <div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                     id="interest"
                     required
                     defaultValue=""
-                    className="appearance-none w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="appearance-none w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   >
                     <option value="" disabled>Select an option...</option>
                     <option value="Early access">Join early access</option>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                     <option value="General inquiry">General inquiry</option>
                     <option value="Something else">Something else</option>
                   </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate">
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-ink-soft">
                     <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                   id="message"
                   rows={5}
                   required
-                  className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors resize-y"
+                  className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors resize-y"
                   placeholder="Tell us a bit about your practice or specific requirements..."
                 ></textarea>
               </div>
@@ -177,7 +177,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-ink hover:bg-ink/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
                 >
                   {isSubmitting ? "Sending..." : "Submit Inquiry"}
                 </button>

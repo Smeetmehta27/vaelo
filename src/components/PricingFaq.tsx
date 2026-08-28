@@ -2,11 +2,11 @@ import { Reveal } from './animations/Reveal';
 
 export function PricingFaq() {
   return (
-    <section className="bg-white py-24 border-b border-ledger-line">
+    <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="border border-ledger-line p-10 lg:p-16 text-center">
+        <Reveal className="border border-stone-line bg-paper p-10 lg:p-16 text-center">
           <h2 className="text-3xl font-serif text-ink mb-6">Why this pricing model?</h2>
-          <div className="text-slate text-lg leading-relaxed max-w-2xl mx-auto space-y-6">
+          <div className="text-ink-soft text-lg leading-relaxed max-w-2xl mx-auto space-y-6">
             <p>
               Vaelo isn't just a report generator; it's a live, always-on financial workspace connecting you and your clients. A low one-time setup fee gets you on the platform immediately, and the monthly subscription keeps it running.
             </p>

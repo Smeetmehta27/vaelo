@@ -2,15 +2,15 @@ export function PrivacyPolicyContent() {
   const currentDate = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
-    <section className="bg-white py-20 border-b border-ledger-line">
+    <section className="bg-paper-dim py-20 border-b border-stone-line">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="mb-12 border-b border-ledger-line pb-8">
+        <div className="mb-12 border-b border-stone-line pb-8">
           <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Privacy Policy</h1>
-          <p className="text-slate text-sm font-mono uppercase tracking-wider">Effective Date: {currentDate}</p>
+          <p className="text-ink-soft text-sm font-mono uppercase tracking-wider">Effective Date: {currentDate}</p>
         </div>
 
-        <div className="prose prose-slate prose-headings:font-serif prose-headings:text-ink prose-headings:font-medium prose-p:text-slate prose-a:text-corporate-blue max-w-none space-y-8">
+        <div className="prose prose-slate prose-headings:font-serif prose-headings:text-ink prose-headings:font-medium prose-p:text-ink-soft prose-a:text-bronze-deep max-w-none space-y-8">
           
           <div>
             <p className="text-lg leading-relaxed mb-6">
@@ -24,7 +24,7 @@ export function PrivacyPolicyContent() {
           <div>
             <h2 className="text-2xl mt-10 mb-4">1. What Data We Collect</h2>
             <p>To provide our services, we collect the following types of information:</p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
+            <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
               <li><strong>Account Information:</strong> Your name, firm name, email address, and billing details.</li>
               <li><strong>WhatsApp Contact Information:</strong> The verified phone number you provide to receive your generated reports via the WhatsApp Business API.</li>
               <li><strong>Client Financial Data:</strong> The raw financial data you submit for analysis. This includes Tally or Zoho exports, manual Profit & Loss statements, Balance Sheets, and specific transaction assumptions needed to generate CMA, Financial Health, or Feasibility reports.</li>
@@ -34,12 +34,12 @@ export function PrivacyPolicyContent() {
           <div>
             <h2 className="text-2xl mt-10 mb-4">2. How We Use Your Data</h2>
             <p>Your data is used strictly to deliver the service you requested. We use the information to:</p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
+            <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
               <li>Ingest and structure financial data to generate deterministic financial models.</li>
               <li>Make the live financial models and optional white-labeled PDF exports available securely within your workspace dashboard.</li>
               <li>Provide customer support and respond to your inquiries.</li>
             </ul>
-            <p className="mt-4 font-medium text-ink bg-paper p-4 border border-ledger-line rounded-sm">
+            <p className="mt-4 font-medium text-ink bg-paper p-4 border border-stone-line rounded-sm">
               We do not sell your data. We do not share your clients' financial data with unauthorized third parties. We strictly do not use your proprietary financial submissions to train external, shared, or public AI models.
             </p>
           </div>
@@ -49,7 +49,7 @@ export function PrivacyPolicyContent() {
             <p>
               We implement robust security measures to protect your data against unauthorized access or disclosure:
             </p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
+            <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
               <li><strong>Encryption:</strong> All data is encrypted at rest and in transit using industry-standard protocols (TLS/SSL).</li>
               <li><strong>Isolation:</strong> Client data is logically isolated between individual CA accounts. You cannot access another practice's data, and they cannot access yours.</li>
               <li><strong>Data Residency:</strong> Our primary databases and hosting infrastructure are located in secure, India-based data centers to comply with local data sovereignty preferences.</li>
@@ -61,7 +61,7 @@ export function PrivacyPolicyContent() {
             <p>
               We utilize select, trusted third-party infrastructure providers to deliver our service. These providers are bound by strict data processing agreements:
             </p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
+            <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
               <li><strong>Meta (WhatsApp Business API):</strong> Used exclusively to deliver your completed reports and critical notifications securely to your registered WhatsApp number.</li>
               <li><strong>Supabase & Deno Deploy:</strong> Used for secure database hosting, authentication, application logic (Edge Functions), and encrypted file storage of your generated PDF reports.</li>
               <li><strong>Payment Processors:</strong> We use secure, compliant payment gateways (e.g., Razorpay/Stripe) to process invoice payments. We do not store your credit card numbers on our servers.</li>
@@ -83,7 +83,7 @@ export function PrivacyPolicyContent() {
             <p>
               In compliance with the Digital Personal Data Protection (DPDP) Act of India, you (and by extension, your clients) hold the following rights regarding personal data:
             </p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
+            <ul className="list-disc pl-5 space-y-2 mt-4 text-ink-soft">
               <li><strong>Right to Access:</strong> You can request a summary of the personal data we hold about you.</li>
               <li><strong>Right to Correction:</strong> You can request that we correct any inaccurate or incomplete data.</li>
               <li><strong>Right to Erasure:</strong> You can request the deletion of your personal data when it is no longer necessary for the purpose it was collected.</li>
@@ -98,15 +98,15 @@ export function PrivacyPolicyContent() {
             </p>
           </div>
 
-          <div className="pt-8 mt-12 border-t border-ledger-line">
+          <div className="pt-8 mt-12 border-t border-stone-line">
             <h2 className="text-2xl mb-4">8. Contact Information</h2>
             <p>
               If you have any questions about this Privacy Policy, your data rights, or our security practices, please contact our Data Protection/Privacy Officer at:
             </p>
-            <p className="mt-4 font-mono font-medium text-corporate-blue">
+            <p className="mt-4 font-mono font-medium text-bronze-deep">
               vaelo.team@gmail.com
             </p>
-            <p className="mt-2 text-sm text-slate">
+            <p className="mt-2 text-sm text-ink-soft">
               (We will update this to privacy@vaelo.co.in once the custom domain email is fully provisioned.)
             </p>
           </div>

@@ -21,18 +21,18 @@ export function ForClients() {
   ];
 
   return (
-    <section className="bg-white py-24 border-b border-ledger-line">
+    <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-serif text-ink">A powerful window for your clients</h2>
-          <p className="mt-4 text-slate text-lg">Give your clients direct access to their financial truth, securely powered by your practice.</p>
+          <p className="mt-4 text-ink-soft text-lg">Give your clients direct access to their financial truth, securely powered by your practice.</p>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-5xl mx-auto">
           {points.map((point) => (
             <RevealItem key={point.title} className="flex flex-col">
               <h3 className="text-lg font-semibold text-ink mb-3">{point.title}</h3>
-              <p className="text-slate text-sm leading-relaxed mb-3">
+              <p className="text-ink-soft text-sm leading-relaxed mb-3">
                 {point.description}
               </p>
             </RevealItem>

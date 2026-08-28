@@ -1,27 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0B1727;
-  --color-corporate-blue: #1A365D;
-  --color-precision-green: #047857;
-  --color-slate: #475569;
-  --color-ledger-line: #E2E8F0;
-  --color-paper: #FAFAFA;
-  
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-crimson-pro), ui-serif, Georgia, serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+  /* ── Vaelo Identity System — Colors ── */
+  --color-ink: #14171C;
+  --color-ink-soft: #4B4A45;
+  --color-paper: #F7F4EF;
+  --color-paper-dim: #EFEAE1;
+  --color-stone: #CFC8BA;
+  --color-stone-line: #DAD4C6;
+  --color-bronze: #96733A;
+  --color-bronze-deep: #6E5225;
+  --color-bronze-tint: #F1E6D2;
+
+  /* ── Typography ── */
+  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif-4), ui-serif, Georgia, serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 body {
   background-color: var(--color-paper);
   color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
 }
 
 @layer base {
   /* Global accessible focus state for all interactive elements */
   *:focus-visible {
-    outline: 2px solid var(--color-corporate-blue);
+    outline: 2px solid var(--color-bronze);
     outline-offset: 2px;
   }
 }

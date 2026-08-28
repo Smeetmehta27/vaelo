@@ -25,11 +25,11 @@ export function ProcessDetail() {
   ];
 
   return (
-    <section className="bg-paper py-24 border-b border-ledger-line">
+    <section className="bg-paper py-24 border-b border-stone-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="mb-16 border-b border-ledger-line pb-8">
+        <Reveal className="mb-16 border-b border-stone-line pb-8">
           <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">How Vaelo works</h1>
-          <p className="text-xl text-slate leading-relaxed">
+          <p className="text-xl text-ink-soft leading-relaxed">
             A closer look at our process—designed to support your professional judgment, not replace it.
           </p>
         </Reveal>
@@ -39,16 +39,16 @@ export function ProcessDetail() {
             <RevealItem key={step.number} className="relative pl-8 md:pl-0">
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="hidden md:block col-span-1">
-                  <div className="w-12 h-12 border-2 border-corporate-blue text-corporate-blue font-mono font-bold flex items-center justify-center rounded-sm bg-white shadow-sm">
+                  <div className="w-12 h-12 border-2 border-bronze text-bronze font-mono font-bold flex items-center justify-center rounded-sm bg-paper shadow-sm">
                     {step.number}
                   </div>
                 </div>
                 <div className="col-span-3">
-                  <div className="md:hidden w-12 h-12 border-2 border-corporate-blue text-corporate-blue font-mono font-bold flex items-center justify-center rounded-sm bg-white shadow-sm mb-4">
+                  <div className="md:hidden w-12 h-12 border-2 border-bronze text-bronze font-mono font-bold flex items-center justify-center rounded-sm bg-paper shadow-sm mb-4">
                     {step.number}
                   </div>
                   <h2 className="text-2xl font-serif text-ink mb-4">{step.title}</h2>
-                  <p className="text-slate text-lg leading-relaxed">{step.content}</p>
+                  <p className="text-ink-soft text-lg leading-relaxed">{step.content}</p>
                 </div>
               </div>
             </RevealItem>

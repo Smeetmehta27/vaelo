@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <section className="bg-paper py-24 border-b border-ledger-line">
+      <section className="bg-paper py-24 border-b border-stone-line">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Reveal className="mb-16 border-b border-ledger-line pb-8">
+          <Reveal className="mb-16 border-b border-stone-line pb-8">
             <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">The Story Behind Vaelo</h1>
-            <p className="text-sm font-mono text-slate uppercase tracking-wider">
+            <p className="text-sm font-mono text-ink-soft uppercase tracking-wider">
               Institutional rigor for independent practices
             </p>
           </Reveal>
@@ -31,13 +31,13 @@ export default function AboutPage() {
               </p>
             </RevealItem>
             
-            <RevealItem className="my-12 flex gap-4 bg-white border border-ledger-line p-8 shadow-sm">
-              <div className="hidden sm:flex shrink-0 w-12 h-12 bg-corporate-blue text-white rounded-sm items-center justify-center font-mono font-bold">
+            <RevealItem className="my-12 flex gap-4 bg-paper-dim border border-stone-line p-8 shadow-sm">
+              <div className="hidden sm:flex shrink-0 w-12 h-12 bg-bronze text-paper rounded-sm items-center justify-center font-mono font-bold">
                 ✓
               </div>
               <div>
                 <h3 className="text-xl font-serif text-ink mb-2">A Registered Indian Enterprise</h3>
-                <p className="text-base text-slate">
+                <p className="text-base text-ink-soft">
                   Vaelo is a proudly Indian venture, Udyam-registered in Gujarat. We operate with full transparency and are dedicated to serving the Indian CA community with secure, reliable tools.
                 </p>
               </div>

@@ -23,15 +23,15 @@ export function Faq() {
   ];
 
   return (
-    <section className="bg-white py-24 border-b border-ledger-line">
+    <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-serif text-ink mb-12 border-b border-ledger-line pb-6">Common Questions</h2>
+        <h2 className="text-3xl font-serif text-ink mb-12 border-b border-stone-line pb-6">Common Questions</h2>
         
         <div className="space-y-10">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-ledger-line p-8 hover:bg-paper transition-colors">
+            <div key={index} className="border border-stone-line bg-paper p-8 hover:bg-paper-dim transition-colors">
               <h3 className="text-lg font-semibold text-ink mb-4">{faq.question}</h3>
-              <p className="text-slate text-base leading-relaxed">{faq.answer}</p>
+              <p className="text-ink-soft text-base leading-relaxed">{faq.answer}</p>
             </div>
           ))}
         </div>

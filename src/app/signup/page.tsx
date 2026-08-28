@@ -53,24 +53,24 @@ export default function SignupPage() {
 
   return (
     <main>
-      <section className="bg-paper py-24 border-b border-ledger-line">
+      <section className="bg-paper py-24 border-b border-stone-line">
         <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 border-b border-ledger-line pb-8">
+          <div className="mb-12 border-b border-stone-line pb-8">
             <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Start your free workspace</h1>
-            <p className="text-xl text-slate leading-relaxed">
+            <p className="text-xl text-ink-soft leading-relaxed">
               Join Vaelo pre-launch to secure early access to the platform and lock in our foundational pricing.
             </p>
           </div>
 
           {success ? (
-            <div className="bg-white border-2 border-precision-green p-8 text-center flex flex-col items-center">
-              <div className="w-16 h-16 bg-precision-green/10 text-precision-green rounded-full flex items-center justify-center mb-4">
+            <div className="bg-paper-dim border-2 border-bronze p-8 text-center flex flex-col items-center">
+              <div className="w-16 h-16 bg-bronze-tint text-bronze-deep rounded-full flex items-center justify-center mb-4">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <h3 className="text-2xl font-serif text-ink mb-2">You're on the list</h3>
-              <p className="text-slate text-lg">
+              <p className="text-ink-soft text-lg">
                 Thanks for your interest. We will be in touch shortly with early access details.
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function SignupPage() {
                     name="name"
                     id="name"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
                 <div>
@@ -100,7 +100,7 @@ export default function SignupPage() {
                     name="firm"
                     id="firm"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function SignupPage() {
                     name="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors"
                   />
                 </div>
                 <div>
@@ -123,7 +123,7 @@ export default function SignupPage() {
                     name="clients"
                     id="clients"
                     placeholder="Optional"
-                    className="w-full px-4 py-3 bg-white border border-ledger-line text-ink focus:outline-none focus:border-corporate-blue transition-colors placeholder:text-slate/50"
+                    className="w-full px-4 py-3 bg-paper border border-stone-line text-ink focus:outline-none focus:border-bronze transition-colors placeholder:text-ink-soft/50"
                   />
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function SignupPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-corporate-blue hover:bg-corporate-blue/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-ink hover:bg-ink/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
                 >
                   {isSubmitting ? "Submitting..." : "Join Early Access"}
                 </button>
