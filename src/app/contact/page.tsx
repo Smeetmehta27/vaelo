@@ -177,7 +177,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-ink hover:bg-ink/90 hover:-translate-y-[1px] hover:shadow-md focus:outline-none transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+                  className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep hover:-translate-y-[1px] hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
                 >
                   {isSubmitting ? "Sending..." : "Submit Inquiry"}
                 </button>

@@ -13,7 +13,7 @@ export function CtaSection() {
         </p>
         <Link
           href="/signup"
-          className="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-ink bg-paper hover:bg-paper-dim hover:-translate-y-[1px] hover:shadow-md transition-all duration-200"
+          className="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
         >
           Start Free
         </Link>

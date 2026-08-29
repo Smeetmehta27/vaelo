@@ -19,13 +19,13 @@ export function Hero() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/signup"
-                className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-ink hover:bg-ink/90 hover:-translate-y-[1px] hover:shadow-md transition-all duration-200"
+                className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
               >
                 Start Free
               </Link>
               <Link
                 href="/how-it-works"
-                className="inline-flex justify-center items-center px-6 py-3 border border-stone-line text-base font-medium rounded-sm text-ink bg-paper hover:bg-paper-dim hover:-translate-y-[1px] hover:shadow-sm transition-all duration-200"
+                className="inline-flex justify-center items-center px-6 py-3 border border-ink text-base font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
               >
                 See how it works
               </Link>
