@@ -43,3 +43,7 @@ next-env.d.ts
 # local test output
 lighthouse*.json
 *.log
+
+# next.js agent docs
+AGENTS.md
+CLAUDE.md
