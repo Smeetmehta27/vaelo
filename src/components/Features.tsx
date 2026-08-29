@@ -40,7 +40,7 @@ export function Features() {
               <div className="pt-6 border-t border-stone-line/50 mt-auto">
                 <span className="block text-xs font-mono uppercase tracking-wide text-ink-soft mb-1">When to run:</span>
                 <span className="block text-sm font-medium text-ink mb-3">{pipeline.for}</span>
-                <span className="block text-xs font-mono text-bronze">✦ {pipeline.speed}</span>
+                <span className="block text-xs font-mono text-bronze-deep">✦ {pipeline.speed}</span>
               </div>
             </RevealItem>
           ))}
