@@ -16,9 +16,8 @@ export default function ContactPage() {
 
     const formData = new FormData(e.currentTarget);
 
-    // Add Web3Forms access key
-    // NOTE: Replace this placeholder with your real access key from https://web3forms.com/
-    formData.append("access_key", "d582d9cb-6cd5-48f8-aaea-4d7db36f1c8f");
+    // Web3Forms access key
+    formData.append("access_key", "3878320f-6bad-4c37-9183-7b943396793c");
 
     // Optional: Make it redirect back to form on error, though we handle UI in JS
     formData.append("subject", "New Inquiry from Vaelo Contact Form");

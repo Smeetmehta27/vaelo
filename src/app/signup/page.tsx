@@ -17,7 +17,7 @@ export default function SignupPage() {
     const formData = new FormData(e.currentTarget);
 
     // Web3Forms access key
-    formData.append("access_key", "d582d9cb-6cd5-48f8-aaea-4d7db36f1c8f");
+    formData.append("access_key", "e254a917-23a9-47f7-a1df-0857e7f2a14c");
     formData.append("subject", "New Early Access Signup for Vaelo");
 
     try {
@@ -56,9 +56,9 @@ export default function SignupPage() {
       <section className="bg-paper py-24 border-b border-stone-line">
         <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 border-b border-stone-line pb-8">
-            <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Start your free workspace</h1>
+            <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">Join the waitlist</h1>
             <p className="text-xl text-ink-soft leading-relaxed">
-              Join Vaelo pre-launch to secure early access to the platform and lock in our foundational pricing.
+              Vaelo is currently in closed pre-launch. Join the waitlist to secure your spot in our founding-CA cohort and lock in early access pricing.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ export default function SignupPage() {
                   disabled={isSubmitting}
                   className="w-full md:w-auto inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep hover:-translate-y-[1px] hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
                 >
-                  {isSubmitting ? "Submitting..." : "Join Early Access"}
+                  {isSubmitting ? "Submitting..." : "Join the waitlist"}
                 </button>
               </div>
             </form>
