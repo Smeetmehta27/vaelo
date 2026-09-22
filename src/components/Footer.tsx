@@ -13,47 +13,56 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center gap-3 group">
               <VaeloLogo variant="full" colorMode="light" symbolSize={28} />
             </Link>
-            <p className="mt-4 text-sm text-stone max-w-xs leading-relaxed">
+            <p className="mt-4 font-sans text-sm text-stone max-w-xs leading-[1.65]">
               Institutional-grade financial analysis in a live workspace, connecting independent Chartered Accountants to their clients.
             </p>
+            <Link href="/contact" className="mt-6 inline-block font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">
+              Get in touch →
+            </Link>
           </RevealItem>
           
           <RevealItem>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-stone mb-4 font-mono">Platform</h3>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-stone font-medium mb-4">Platform</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/how-it-works" className="text-sm text-stone hover:text-paper transition-colors duration-200">How It Works</Link>
+                <Link href="/how-it-works" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">How It Works</Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-stone hover:text-paper transition-colors duration-200">Pricing</Link>
+                <Link href="/platform" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Platform</Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-stone hover:text-paper transition-colors duration-200">About Us</Link>
+                <Link href="/roadmap" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Roadmap</Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/about" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">About Us</Link>
+              </li>
+              <li>
+                <Link href="/invest" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Invest</Link>
               </li>
             </ul>
           </RevealItem>
 
           <RevealItem>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-stone mb-4 font-mono">Legal</h3>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-stone font-medium mb-4">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/contact" className="text-sm text-stone hover:text-paper transition-colors duration-200">Contact</Link>
+                <Link href="/privacy-policy" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="text-sm text-stone hover:text-paper transition-colors duration-200">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-sm text-stone hover:text-paper transition-colors duration-200">Terms of Service</Link>
+                <Link href="/terms" className="font-sans text-sm text-stone hover:text-paper hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">Terms of Service</Link>
               </li>
             </ul>
           </RevealItem>
         </RevealGroup>
         
         <Reveal className="mt-12 pt-8 border-t border-stone/30 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-stone font-mono">
+          <p className="font-mono text-[11px] text-stone/60">
             &copy; {currentYear} Vaelo. All rights reserved.
           </p>
-          <p className="text-sm text-stone mt-4 md:mt-0 font-mono">
+          <p className="font-mono text-[11px] text-stone/60 mt-4 md:mt-0">
             Encrypted &amp; DPDP Act Conscious
           </p>
         </Reveal>

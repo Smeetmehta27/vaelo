@@ -20,26 +20,40 @@ export function Nav() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/how-it-works" className="text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-200">
+            <Link href="/how-it-works" className="text-sm font-medium text-ink-soft hover:text-ink hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">
               How it works
             </Link>
-            <Link href="/pricing" className="text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-200">
+            <Link href="/pricing" className="text-sm font-medium text-ink-soft hover:text-ink hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">
               Pricing
             </Link>
-            <Link href="/about" className="text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-200">
+            <Link href="/about" className="text-sm font-medium text-ink-soft hover:text-ink hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200">
               About
-            </Link>
-            <Link href="/contact" className="text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-200">
-              Contact
             </Link>
           </div>
           
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-sm font-medium text-ink-soft group-hover:text-ink transition-all duration-200 focus:outline-none">
+                More
+                <svg className="w-3.5 h-3.5 text-stone group-hover:text-ink transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              <div className="absolute right-0 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="w-40 bg-paper border border-stone-line rounded-sm shadow-sm py-2 flex flex-col">
+                  <Link href="/platform" className="px-4 py-2 text-sm text-ink-soft hover:text-ink hover:bg-paper-dim transition-colors">Platform</Link>
+                  <Link href="/roadmap" className="px-4 py-2 text-sm text-ink-soft hover:text-ink hover:bg-paper-dim transition-colors">Roadmap</Link>
+                  <Link href="/invest" className="px-4 py-2 text-sm text-ink-soft hover:text-ink hover:bg-paper-dim transition-colors">Invest</Link>
+                  <Link href="/contact" className="px-4 py-2 text-sm text-ink-soft hover:text-ink hover:bg-paper-dim transition-colors">Contact</Link>
+                </div>
+              </div>
+            </div>
             <Link 
               href="/signup" 
-              className="inline-flex items-center justify-center px-4 py-2 border border-ink text-sm font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim hover:-translate-y-[1px] hover:shadow-sm transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
             >
-              Start Free
+              Join the waitlist
             </Link>
           </div>
 
@@ -94,20 +108,46 @@ export function Nav() {
               >
                 About
               </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="block px-3 py-4 text-base font-medium text-ink hover:bg-paper-dim border-b border-stone-line/50"
-              >
-                Contact
-              </Link>
+              <div className="pt-2 pb-2">
+                <span className="block px-3 py-2 text-sm font-mono uppercase tracking-[0.16em] text-stone font-medium">More</span>
+                <div className="pl-4 border-l border-stone-line ml-4 mt-1 space-y-1">
+                  <Link
+                    href="/platform"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-base font-medium text-ink-soft hover:text-ink hover:bg-paper-dim rounded-sm transition-colors"
+                  >
+                    Platform
+                  </Link>
+                  <Link
+                    href="/roadmap"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-base font-medium text-ink-soft hover:text-ink hover:bg-paper-dim rounded-sm transition-colors"
+                  >
+                    Roadmap
+                  </Link>
+                  <Link
+                    href="/invest"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-base font-medium text-ink-soft hover:text-ink hover:bg-paper-dim rounded-sm transition-colors"
+                  >
+                    Invest
+                  </Link>
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-base font-medium text-ink-soft hover:text-ink hover:bg-paper-dim rounded-sm transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </div>
+              </div>
               <div className="pt-4">
                 <Link
                   href="/signup"
                   onClick={() => setIsOpen(false)}
-                  className="w-full inline-flex justify-center items-center px-4 py-3 border border-ink text-base font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+                  className="w-full inline-flex justify-center items-center px-4 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
                 >
-                  Start Free
+                  Join the waitlist
                 </Link>
               </div>
             </div>
