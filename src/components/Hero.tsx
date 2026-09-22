@@ -10,22 +10,26 @@ export function Hero() {
           
           {/* Copy */}
           <Reveal className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-ink leading-[1.1] tracking-tight">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-6 h-px bg-bronze"></span>
+              <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">CA Practice Operating System</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-[4.5rem] font-serif font-[560] text-ink leading-[1.1] tracking-tight">
               The collaborative financial workspace for CAs and their clients.
             </h1>
-            <p className="mt-6 text-lg text-ink-soft leading-relaxed">
+            <p className="mt-6 text-lg text-ink-soft leading-[1.65] max-w-[640px]">
               Equip your CA practice with structured financial intelligence across CMA, financial health, and feasibility. Run pipelines on demand from a self-serve dashboard, while your clients log in to see the actual reports and analysis you've run for them.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/signup"
-                className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
+                className="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm text-paper bg-bronze hover:bg-bronze-deep transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bronze"
               >
-                Start Free
+                Join the waitlist
               </Link>
               <Link
                 href="/how-it-works"
-                className="inline-flex justify-center items-center px-6 py-3 border border-ink text-base font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim hover:-translate-y-[1px] hover:shadow-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
+                className="inline-flex justify-center items-center px-6 py-3 border border-stone-line text-base font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
               >
                 See how it works
               </Link>

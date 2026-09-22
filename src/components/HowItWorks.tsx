@@ -25,11 +25,15 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="bg-paper py-24 border-b border-stone-line">
+    <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="mb-16">
-          <h2 className="text-3xl font-serif text-ink">How it works</h2>
-          <p className="mt-4 text-ink-soft text-lg">A straightforward process designed around the working rhythm of a CA practice.</p>
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-6 h-px bg-bronze"></span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">How it works</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink">A seamless process</h2>
+          <p className="mt-4 text-ink-soft text-lg font-sans max-w-[640px]">A straightforward process designed around the working rhythm of a CA practice.</p>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -37,15 +41,15 @@ export function HowItWorks() {
             <RevealItem key={step.id} className="relative group cursor-default">
               {/* Connector line for desktop */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-6 left-full w-full h-[1px] bg-stone-line -ml-4 z-0"></div>
+                <div className="hidden lg:block absolute top-5 left-full w-full h-[1px] bg-stone-line -ml-4 z-0"></div>
               )}
               
-              <div className="relative z-10 bg-paper p-2 -m-2 rounded-md transition-all duration-200 group-hover:bg-paper-dim group-hover:shadow-sm group-hover:-translate-y-1">
-                <div className="w-12 h-12 border-2 border-bronze text-bronze font-mono font-bold flex items-center justify-center rounded-sm mb-6 bg-paper shadow-sm transition-colors duration-200 group-hover:bg-bronze group-hover:text-paper">
+              <div className="relative z-10 p-2 -m-2">
+                <div className="w-10 h-10 bg-bronze-tint text-bronze-deep font-mono font-medium flex items-center justify-center rounded-full mb-6 relative z-10">
                   {step.id}
                 </div>
-                <h3 className="text-lg font-semibold text-ink mb-3">{step.title}</h3>
-                <p className="text-ink-soft text-sm leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-serif font-[560] text-ink mb-3">{step.title}</h3>
+                <p className="font-sans text-ink-soft text-sm leading-[1.65]">{step.description}</p>
               </div>
             </RevealItem>
           ))}

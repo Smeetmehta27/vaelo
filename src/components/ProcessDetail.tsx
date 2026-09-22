@@ -27,28 +27,35 @@ export function ProcessDetail() {
   return (
     <section className="bg-paper py-24 border-b border-stone-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="mb-16 border-b border-stone-line pb-8">
-          <h1 className="text-4xl font-serif text-ink tracking-tight mb-4">How Vaelo works</h1>
-          <p className="text-xl text-ink-soft leading-relaxed">
+        <Reveal className="mb-20 border-b border-stone-line pb-8">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-6 h-px bg-bronze"></span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">Process</span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-serif font-[560] text-ink mb-6">How Vaelo works</h1>
+          <p className="font-sans text-xl text-ink-soft leading-[1.65]">
             A closer look at our process—designed to support your professional judgment, not replace it.
           </p>
         </Reveal>
 
-        <RevealGroup className="space-y-16">
+        <RevealGroup className="space-y-16 relative">
+          {/* Vertical Connector Line (Desktop) */}
+          <div className="hidden md:block absolute top-10 bottom-10 left-[1.18rem] w-[1px] bg-stone-line z-0"></div>
+          
           {steps.map((step) => (
-            <RevealItem key={step.number} className="relative pl-8 md:pl-0">
-              <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
-                <div className="hidden md:block col-span-1">
-                  <div className="w-12 h-12 border-2 border-bronze text-bronze font-mono font-bold flex items-center justify-center rounded-sm bg-paper shadow-sm">
+            <RevealItem key={step.number} className="relative pl-0">
+              <div className="md:grid md:grid-cols-4 md:gap-8 items-start relative z-10">
+                <div className="hidden md:block col-span-1 bg-paper py-2 -my-2">
+                  <div className="w-10 h-10 bg-bronze-tint text-bronze-deep font-mono font-medium flex items-center justify-center rounded-full relative z-10">
                     {step.number}
                   </div>
                 </div>
                 <div className="col-span-3">
-                  <div className="md:hidden w-12 h-12 border-2 border-bronze text-bronze font-mono font-bold flex items-center justify-center rounded-sm bg-paper shadow-sm mb-4">
+                  <div className="md:hidden w-10 h-10 bg-bronze-tint text-bronze-deep font-mono font-medium flex items-center justify-center rounded-full mb-6">
                     {step.number}
                   </div>
-                  <h2 className="text-2xl font-serif text-ink mb-4">{step.title}</h2>
-                  <p className="text-ink-soft text-lg leading-relaxed">{step.content}</p>
+                  <h2 className="text-2xl font-serif font-[560] text-ink mb-4">{step.title}</h2>
+                  <p className="font-sans text-ink-soft text-lg leading-[1.65]">{step.content}</p>
                 </div>
               </div>
             </RevealItem>

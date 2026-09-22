@@ -25,13 +25,19 @@ export function Faq() {
   return (
     <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-serif text-ink mb-12 border-b border-stone-line pb-6">Common Questions</h2>
+        <div className="mb-12 border-b border-stone-line pb-6">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-6 h-px bg-bronze"></span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">FAQ</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-serif font-[560] text-ink">Common Questions</h2>
+        </div>
         
-        <div className="space-y-10">
+        <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-stone-line bg-paper p-8 hover:bg-paper-dim transition-colors">
-              <h3 className="text-lg font-semibold text-ink mb-4">{faq.question}</h3>
-              <p className="text-ink-soft text-base leading-relaxed">{faq.answer}</p>
+            <div key={index} className="border border-stone-line bg-paper rounded-[20px] p-8">
+              <h3 className="text-xl font-serif font-[560] text-ink mb-3">{faq.question}</h3>
+              <p className="font-sans text-ink-soft text-sm leading-[1.65]">{faq.answer}</p>
             </div>
           ))}
         </div>

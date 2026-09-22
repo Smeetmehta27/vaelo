@@ -48,8 +48,8 @@ export function LiveModelPreview() {
   const duration = 1.2;
 
   return (
-    <Reveal delay={0.2} className="relative border border-stone-line bg-paper shadow-sm p-1 rounded-sm w-full">
-      <div className="border border-stone-line p-6 bg-paper-dim/50">
+    <Reveal delay={0.2} className="relative border border-stone-line bg-paper-dim rounded-[20px] p-6 w-full overflow-hidden">
+      <div>
         <div className="flex items-center justify-between mb-6 pb-4 border-b border-stone-line">
           <h3 className="font-mono text-xs uppercase tracking-widest text-ink-soft font-semibold">Financial Model Preview</h3>
           <span className="font-mono text-xs text-bronze-deep bg-bronze-tint px-2 py-1 rounded-sm">LIVE MODEL</span>
@@ -61,7 +61,7 @@ export function LiveModelPreview() {
             <span className="text-ink font-medium tabular-nums">
               <Counter 
                 from={0} 
-                to={18.6} 
+                to={8.4} 
                 delay={baseDelay} 
                 duration={duration} 
                 format={(v) => `₹${v.toFixed(1)} Cr`} 
@@ -85,7 +85,7 @@ export function LiveModelPreview() {
             <span className="text-ink font-medium tabular-nums">
               <Counter 
                 from={0} 
-                to={1.45} 
+                to={2.1} 
                 delay={baseDelay + 0.2} 
                 duration={duration} 
                 format={(v) => `${v.toFixed(2)}x`} 
@@ -97,7 +97,7 @@ export function LiveModelPreview() {
             <span className="text-bronze font-bold text-lg tabular-nums">
               <Counter 
                 from={0} 
-                to={2.4} 
+                to={0.6} 
                 delay={baseDelay + 0.4} 
                 duration={duration} 
                 format={(v) => `₹${v.toFixed(1)} Cr`} 
@@ -109,8 +109,8 @@ export function LiveModelPreview() {
         <div className="mt-6 pt-4 border-t border-stone-line">
           <div className="w-full bg-paper-dim h-1.5 rounded-full overflow-hidden">
             <motion.div 
-              initial={reducedMotion ? { width: "72%" } : { width: "0%" }}
-              animate={{ width: "72%" }}
+              initial={reducedMotion ? { width: "85%" } : { width: "0%" }}
+              animate={{ width: "85%" }}
               transition={{ delay: baseDelay + 0.8, duration: 0.8, ease: "easeOut" }}
               className="bg-bronze h-full"
             />

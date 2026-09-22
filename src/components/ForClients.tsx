@@ -23,16 +23,21 @@ export function ForClients() {
   return (
     <section className="bg-paper-dim py-24 border-b border-stone-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-serif text-ink">A powerful window for your clients</h2>
-          <p className="mt-4 text-ink-soft text-lg">Give your clients direct access to their financial truth, securely powered by your practice.</p>
+        <Reveal className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="w-6 h-px bg-bronze"></span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">For Your Clients</span>
+            <span className="w-6 h-px bg-bronze sm:hidden"></span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink">A powerful window for your clients</h2>
+          <p className="mt-4 text-ink-soft text-lg font-sans max-w-[640px] mx-auto leading-[1.65]">Give your clients direct access to their financial truth, securely powered by your practice.</p>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-5xl mx-auto">
           {points.map((point) => (
             <RevealItem key={point.title} className="flex flex-col">
-              <h3 className="text-lg font-semibold text-ink mb-3">{point.title}</h3>
-              <p className="text-ink-soft text-sm leading-relaxed mb-3">
+              <h3 className="text-xl font-serif font-[560] text-ink mb-3">{point.title}</h3>
+              <p className="font-sans text-ink-soft text-sm leading-[1.65] mb-3">
                 {point.description}
               </p>
             </RevealItem>

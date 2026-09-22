@@ -3,8 +3,12 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/animations/Reveal"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Vaelo",
-  description: "The story behind Vaelo: Institutional rigor for independent practices.",
+  title: "About Vaelo | Institutional-Grade Financial Analysis for CAs",
+  description: "Built by a solo founder to bring deterministic, auditable financial modeling — CMA, health scoring, and feasibility — to independent CA practices at an accessible price point.",
+  openGraph: {
+    title: "About Vaelo | Institutional-Grade Financial Analysis for CAs",
+    description: "The story behind Vaelo: deterministic, auditable financial analysis built for independent CA practices.",
+  },
 };
 
 export default function AboutPage() {

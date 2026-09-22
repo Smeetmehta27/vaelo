@@ -26,23 +26,29 @@ export function Trust() {
   return (
     <section className="bg-paper py-24 border-b border-stone-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Reveal className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-serif text-ink">Why CAs trust Vaelo</h2>
-          <p className="mt-4 text-ink-soft text-lg">We understand the reality of running a professional practice in India.</p>
+        <Reveal className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="w-6 h-px bg-bronze"></span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">Trust & Security</span>
+            <span className="w-6 h-px bg-bronze sm:hidden"></span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink">Why CAs trust Vaelo</h2>
+          <p className="mt-4 text-ink-soft text-lg font-sans max-w-[640px] mx-auto leading-[1.65]">We understand the reality of running a professional practice in India.</p>
         </Reveal>
 
-        <RevealGroup className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-5xl mx-auto">
+        <RevealGroup className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {points.map((point) => (
-            <RevealItem key={point.title} className="flex flex-col">
-              <h3 className="text-lg font-semibold text-ink mb-3">{point.title}</h3>
-              <p className="text-ink-soft text-sm leading-relaxed mb-3">
+            <RevealItem key={point.title} className="bg-paper-dim border border-stone-line rounded-[20px] p-8 flex flex-col h-full">
+              <h3 className="text-xl font-serif font-[560] text-ink mb-4">{point.title}</h3>
+              <p className="font-sans text-ink-soft text-sm leading-[1.65] flex-grow mb-6">
                 {point.description}
               </p>
               {point.link && (
-                <Link href={point.link} className="text-bronze-deep text-sm font-medium hover:text-ink transition-colors duration-200 relative group inline-flex max-w-max">
-                  <span>{point.linkText} &rarr;</span>
-                  <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-ink transition-all duration-200 group-hover:w-full"></span>
-                </Link>
+                <div className="mt-auto pt-4 border-t border-stone-line">
+                  <Link href={point.link} className="font-sans text-bronze-deep text-sm font-medium hover:text-ink hover:underline hover:decoration-bronze hover:underline-offset-4 transition-all duration-200 inline-flex">
+                    {point.linkText} &rarr;
+                  </Link>
+                </div>
               )}
             </RevealItem>
           ))}

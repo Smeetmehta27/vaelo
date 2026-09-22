@@ -15,6 +15,8 @@
  *   - "accent" → Bronze symbol + Ink wordmark
  */
 
+import { VaeloMark } from "./VaeloMark";
+
 interface VaeloLogoProps {
   variant?: "full" | "symbol" | "wordmark" | "stacked";
   colorMode?: "dark" | "light" | "accent";
@@ -36,20 +38,13 @@ function VSymbol({
   className?: string;
 }) {
   return (
-    <svg
-      viewBox="0 0 120 120"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+    <VaeloMark
       width={size}
       height={size}
       className={className}
+      style={{ color }}
       aria-hidden="true"
-    >
-      {/* Left arm — heavy stroke */}
-      <polygon points="20,20 43,20 62,98" fill={color} />
-      {/* Right arm — hairline stroke */}
-      <polygon points="87,20 99,20 62,98" fill={color} />
-    </svg>
+    />
   );
 }
 
