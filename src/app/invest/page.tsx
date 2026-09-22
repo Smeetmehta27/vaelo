@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Vaelo investor relations and pre-seed opportunity.",
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 
