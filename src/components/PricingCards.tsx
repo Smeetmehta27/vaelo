@@ -35,7 +35,11 @@ export function PricingCards() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-bronze mr-3 font-medium">—</span>
-                  <span className="font-sans text-sm text-ink-soft leading-[1.65]">All 3 core modules: CMA, Financial Health Snapshot, Feasibility</span>
+                  <span className="font-sans text-sm text-ink-soft leading-[1.65]">Financial pipelines: CMA, Financial Health Snapshot, Feasibility</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-bronze mr-3 font-medium">—</span>
+                  <span className="font-sans text-sm text-ink-soft leading-[1.65]">Practice OS: Client Management, Document Collection, Compliance Calendar, Notice Management, Billing, Review Workflow</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-bronze mr-3 font-medium">—</span>
