@@ -57,7 +57,7 @@ export function FullPlatform() {
             <span className="w-6 h-px bg-bronze"></span>
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">The Full Picture</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink mb-6">
+          <h2 className="text-[clamp(1.875rem,3vw,3rem)] font-serif font-[560] text-ink mb-6">
             Vaelo isn't a report tool. It's the operating system a CA's practice runs on.
           </h2>
           <p className="text-ink-soft text-lg font-sans max-w-3xl leading-[1.65]">

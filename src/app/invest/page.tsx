@@ -22,7 +22,7 @@ export default function InvestPage() {
               <span className="w-6 h-px bg-bronze"></span>
               <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">For Investors</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-serif font-[560] text-ink mb-6">
+            <h1 className="text-[clamp(2rem,4vw,3rem)] font-serif font-[560] text-ink mb-6">
               The one workspace a Chartered Accountant opens every morning.
             </h1>
             <p className="font-sans text-xl text-ink-soft leading-[1.65]">

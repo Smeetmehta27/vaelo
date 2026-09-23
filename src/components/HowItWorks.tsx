@@ -32,7 +32,7 @@ export function HowItWorks() {
             <span className="w-6 h-px bg-bronze"></span>
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">How it works</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink">A seamless process</h2>
+          <h2 className="text-[clamp(1.875rem,3vw,3rem)] font-serif font-[560] text-ink">A seamless process</h2>
           <p className="mt-4 text-ink-soft text-lg font-sans max-w-[640px]">A straightforward process designed around the working rhythm of a CA practice.</p>
         </Reveal>
 

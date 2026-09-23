@@ -33,7 +33,7 @@ export function Nav() {
           
           <div className="hidden md:flex items-center space-x-6">
             <div className="relative group">
-              <button className="flex items-center gap-1 text-sm font-medium text-ink-soft group-hover:text-ink transition-all duration-200 focus:outline-none">
+              <button className="flex items-center gap-1 px-2 py-2 -ml-2 text-sm font-medium text-ink-soft group-hover:text-ink transition-all duration-200 focus:outline-none">
                 More
                 <svg className="w-3.5 h-3.5 text-stone group-hover:text-ink transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -61,7 +61,7 @@ export function Nav() {
           <div className="flex md:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-ink-soft hover:text-ink focus:outline-none p-2"
+              className="text-ink-soft hover:text-ink focus:outline-none p-2.5 -mr-2.5"
               aria-label="Toggle mobile menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

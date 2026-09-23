@@ -30,11 +30,11 @@ export function Features() {
             <span className="w-6 h-px bg-bronze"></span>
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">The Platform</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink">Structured financial intelligence, module by module</h2>
+          <h2 className="text-[clamp(1.875rem,3vw,3rem)] font-serif font-[560] text-ink">Structured financial intelligence, module by module</h2>
           <p className="mt-4 text-ink-soft text-lg font-sans max-w-[640px]">Three core pipelines that turn raw client financial data into reliable, explainable, decision-ready output—available on demand inside your workspace.</p>
         </Reveal>
 
-        <RevealGroup className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <RevealGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pipelines.map((pipeline) => (
             <RevealItem key={pipeline.name} className="border border-stone-line rounded-[20px] p-8 flex flex-col h-full bg-paper-dim">
               <h3 className="text-xl font-serif font-[560] text-ink mb-4">{pipeline.name}</h3>

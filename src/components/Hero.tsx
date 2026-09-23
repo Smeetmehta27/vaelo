@@ -14,7 +14,7 @@ export function Hero() {
               <span className="w-6 h-px bg-bronze"></span>
               <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">CA Practice Operating System</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-[4.5rem] font-serif font-[560] text-ink leading-[1.1] tracking-tight">
+            <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-serif font-[560] text-ink leading-[1.1] tracking-tight">
               The collaborative financial workspace for CAs and their clients.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-[1.65] max-w-[640px]">

@@ -11,7 +11,7 @@ export function PricingCards() {
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">Pricing</span>
             <span className="w-6 h-px bg-bronze md:hidden"></span>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-serif font-[560] text-ink mb-6">Simple, transparent pricing</h1>
+          <h1 className="text-[clamp(2rem,4vw,3rem)] font-serif font-[560] text-ink mb-6">Simple, transparent pricing</h1>
           <p className="font-sans text-lg text-ink-soft leading-[1.65] max-w-3xl md:mx-0 mx-auto">
             One setup fee, one monthly subscription. Full access to every module, unlimited clients, no hidden costs.
           </p>

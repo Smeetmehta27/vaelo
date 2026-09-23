@@ -10,7 +10,7 @@ export function Problem() {
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-bronze-deep font-medium">The Disconnect</span>
             <span className="w-6 h-px bg-bronze sm:hidden"></span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-[560] text-ink mb-8 leading-tight">
+          <h2 className="text-[clamp(1.875rem,3vw,3rem)] font-serif font-[560] text-ink mb-8 leading-tight">
             You are their single point of contact, but disconnected systems hold you back.
           </h2>
           <div className="font-sans text-ink-soft text-lg leading-[1.65] space-y-6 max-w-[640px] mx-auto">
