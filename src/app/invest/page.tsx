@@ -76,7 +76,11 @@ export default function InvestPage() {
                 </li>
                 <li className="flex gap-4">
                   <span className="text-bronze font-medium pt-0.5">—</span>
-                  <span className="text-ink-soft">Client management, document collection, review workflow, and a live practice dashboard.</span>
+                  <span className="text-ink-soft">Client & Practice Management, Document Collection, Review & Approval workflows, and a secure Client Timeline.</span>
+                </li>
+                <li className="flex gap-4">
+                  <span className="text-bronze font-medium pt-0.5">—</span>
+                  <span className="text-ink-soft">Compliance Calendar, Notice Management, and integrated Billing & Collections.</span>
                 </li>
               </ul>
             </RevealItem>
