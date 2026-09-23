@@ -18,7 +18,7 @@ export function Hero() {
               The collaborative financial workspace for CAs and their clients.
             </h1>
             <p className="mt-6 text-lg text-ink-soft leading-[1.65] max-w-[640px]">
-              Equip your CA practice with structured financial intelligence across CMA, financial health, and feasibility. Run pipelines on demand from a self-serve dashboard, while your clients log in to see the actual reports and analysis you've run for them.
+              Equip your CA practice with structured financial intelligence across CMA, financial health, and feasibility. Run pipelines on demand from a self-serve dashboard, while you securely share a chronological timeline of project milestones and finalized reports.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
@@ -32,6 +32,11 @@ export function Hero() {
                 className="inline-flex justify-center items-center px-6 py-3 border border-stone-line text-base font-medium rounded-sm text-ink bg-transparent hover:bg-paper-dim transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink"
               >
                 See how it works
+              </Link>
+            </div>
+            <div className="mt-6 flex justify-start">
+              <Link href="/roadmap" className="inline-flex items-center text-sm font-medium text-ink-soft hover:text-ink hover:underline hover:decoration-stone-line hover:underline-offset-4 transition-all duration-200 group">
+                See what's live today <span className="ml-1 group-hover:translate-x-0.5 transition-transform duration-200">→</span>
               </Link>
             </div>
           </Reveal>

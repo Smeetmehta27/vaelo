@@ -28,7 +28,12 @@ export function CtaSection() {
         >
           Join the waitlist
         </Link>
-        <p className="mt-6 text-[11px] uppercase tracking-[0.16em] font-mono text-stone/80">
+        <div className="mt-8">
+          <Link href="/roadmap" className="inline-flex items-center text-sm font-medium text-stone hover:text-paper hover:underline hover:decoration-stone hover:underline-offset-4 transition-all duration-200 group">
+            See what's live today <span className="ml-1 group-hover:translate-x-0.5 transition-transform duration-200">→</span>
+          </Link>
+        </div>
+        <p className="mt-8 text-[11px] uppercase tracking-[0.16em] font-mono text-stone/80">
           ₹2,000 one-time setup · ₹300–500/month · Full platform access
         </p>
       </Reveal>
