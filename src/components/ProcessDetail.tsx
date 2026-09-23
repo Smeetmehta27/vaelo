@@ -19,7 +19,7 @@ export function ProcessDetail() {
     },
     {
       number: "04",
-      title: "Presentation & Live Iteration",
+      title: "Presentation & Scenario Testing",
       content: "The workspace is white-labeled with your practice's branding—it is your advice, powered by our modeling. When you need to stress-test your client's financials, you can quickly compare Base, Downside, and Severe scenarios to see how adverse conditions impact the output. The platform handles the complex scenario modeling for you.",
     },
   ];
