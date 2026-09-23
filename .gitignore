@@ -47,3 +47,10 @@ lighthouse*.json
 # next.js agent docs
 AGENTS.md
 CLAUDE.md
+
+# scratch and debug output
+output.html
+scratch/
+headers.txt
+body.html
+search.py
