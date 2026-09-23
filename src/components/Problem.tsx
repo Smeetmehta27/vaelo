@@ -18,7 +18,7 @@ export function Problem() {
               Clients rely on you for their financial truth, yet there is no shared, live system connecting your practice to their business. Everything happens through fragmented spreadsheets, email threads, and WhatsApp messages.
             </p>
             <p>
-              Between meetings, clients have no visibility into their own numbers, while you spend countless hours manually reconciling data rather than providing strategic advice. The disconnect drains your time and limits their insight.
+              Between meetings, clients have no visibility into the status of their requests, while you spend countless hours manually reconciling data rather than providing strategic advice. The disconnect drains your time and limits their insight.
             </p>
             <p className="text-ink font-medium">
               Vaelo bridges this gap. A unified financial workspace that brings your analysis and your clients into one live platform.

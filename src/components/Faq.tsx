@@ -5,12 +5,12 @@ export function Faq() {
       answer: "Absolutely. Data privacy is our highest priority. Our infrastructure is fully encrypted (at rest and in transit) and built to be DPDP Act-conscious. Client data is strictly isolated per CA account, and we never use your clients' financials to train public or shared models.",
     },
     {
-      question: "What if I don't use Tally or Zoho?",
-      answer: "Not a problem. While direct imports from Tally and Zoho are faster, you can seamlessly upload standard P&L and Balance Sheet data using our structured Excel templates directly into the workspace. We accommodate the reality of how your clients maintain their books.",
+      question: "How do I bring my clients' data into Vaelo?",
+      answer: "You can seamlessly upload standard P&L and Balance Sheet data using our structured Excel templates directly into the workspace. We accommodate the reality of how your clients maintain their books.",
     },
     {
       question: "Can I adjust the assumptions?",
-      answer: "Yes. Your professional judgment is paramount. If you disagree with a baseline growth rate, projection period, or working capital assumption based on your knowledge of the client, simply adjust it directly in the dashboard. The entire model recalculates instantly to reflect your inputs.",
+      answer: "Yes. Your professional judgment is paramount. The platform provides pre-set rigorous scenario testing — allowing you to easily compare Base, Downside, and Severe scenarios without the need for manual, error-prone spreadsheet adjustments.",
     },
     {
       question: "How is this different from an online financial calculator?",
@@ -18,7 +18,7 @@ export function Faq() {
     },
     {
       question: "Can my clients see this too?",
-      answer: "Yes, if you choose. You can give clients their own login to see the actual reports and analysis you've generated for them. You remain in complete control over what they see — it's a shared ecosystem, not a one-way delivery.",
+      answer: "Yes, if you choose. You can share a secure, tokenized timeline with clients showing document receipts, logged notices, and finalized milestones. You remain in complete control over the analytical data — it's a streamlined status feed, not a complex report viewer.",
     }
   ];
 

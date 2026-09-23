@@ -3,8 +3,8 @@ import { Reveal, RevealGroup, RevealItem } from './animations/Reveal';
 export function ForClients() {
   const points = [
     {
-      title: "Full Visibility Into Your Work",
-      description: "When you bring a client onto Vaelo, they see the actual reports and analysis you've generated for them — CMA data, financial health diagnostics, feasibility models — accessible anytime, not just at your annual meeting.",
+      title: "Clear Visibility Into Status",
+      description: "When you bring a client onto Vaelo, they receive a secure, token-based timeline showing exactly what documents have been received, what's outstanding, and when reports are finalized — keeping them updated without exposing complex analytical models.",
     },
     {
       title: "Powered by Trusted Models",
@@ -16,7 +16,7 @@ export function ForClients() {
     },
     {
       title: "Strengthen Your Advisory",
-      description: "Use this continuous visibility to move from reactive year-end reporting to proactive, ongoing strategic advisory.",
+      description: "Use this structured timeline to move from reactive year-end reporting to proactive, ongoing strategic advisory.",
     },
   ];
 

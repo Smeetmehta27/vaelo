@@ -19,7 +19,7 @@ export function Trust() {
     },
     {
       title: "One Workspace, Not More Tools",
-      description: "You already juggle Tally, Excel, emails, and WhatsApp. Vaelo consolidates client financial work into a single live workspace, giving both you and your client a unified view instead of bouncing reports across disconnected channels.",
+      description: "You already juggle disconnected spreadsheets, emails, and WhatsApp. Vaelo consolidates client financial work into a single live workspace, giving both you and your client a unified view instead of bouncing requests across disconnected channels.",
     },
   ];
 

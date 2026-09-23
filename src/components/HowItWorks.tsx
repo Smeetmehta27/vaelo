@@ -10,7 +10,7 @@ export function HowItWorks() {
     {
       id: "02",
       title: "Add your clients",
-      description: "Invite clients into your workspace. They get their own secure login to see every report and analysis you run for them — a shared ecosystem, not a one-way delivery.",
+      description: "Share progress with clients seamlessly. They receive a secure, tokenized timeline to track document requests and project status — keeping everyone aligned without the friction of creating accounts.",
     },
     {
       id: "03",

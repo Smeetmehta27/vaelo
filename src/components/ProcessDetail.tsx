@@ -5,7 +5,7 @@ export function ProcessDetail() {
     {
       number: "01",
       title: "Data Connection & Ingestion",
-      content: "Rigorous financial analysis starts with clean data. Connect direct exports from Tally and Zoho Books, or import standard P&L and Balance Sheet data via our structured Excel templates directly into your workspace. You provide the historical financials; the platform handles the structuring instantly.",
+      content: "Rigorous financial analysis starts with clean data. Import standard P&L and Balance Sheet data via our structured Excel templates directly into your workspace. You provide the historical financials; the platform handles the structuring instantly.",
     },
     {
       number: "02",
@@ -15,12 +15,12 @@ export function ProcessDetail() {
     {
       number: "03",
       title: "Instant Results in Your Workspace",
-      content: "Time kills deals. There is no waiting for a manual turnaround. The moment a pipeline runs, the results appear live in your dashboard. You have immediate access to the output, and you control whether your client can log in to see the work you've done for them.",
+      content: "Time kills deals. There is no waiting for a manual turnaround. The moment a pipeline runs, the results appear live in your dashboard. You have immediate access to the output, and you control when to share project status updates with your client via their secure timeline.",
     },
     {
       number: "04",
       title: "Presentation & Live Iteration",
-      content: "The workspace is white-labeled with your practice's branding—it is your advice, powered by our modeling. If you or your client want to see how a change in revenue growth assumptions or working capital ratios affects the output, simply adjust the assumption in the dashboard. The entire model updates instantly.",
+      content: "The workspace is white-labeled with your practice's branding—it is your advice, powered by our modeling. When you need to stress-test your client's financials, you can quickly compare Base, Downside, and Severe scenarios to see how adverse conditions impact the output. The platform handles the complex scenario modeling for you.",
     },
   ];
 
